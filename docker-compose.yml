@@ -11,7 +11,6 @@ services:
         volumes:
             - ${CONFIG}/web:/config
             - ${CONFIG}/web/letsencrypt:/etc/letsencrypt
-            - ${CONFIG}/transcripts:/usr/share/jitsi-meet/transcripts
             - ${CONFIG}/www:/usr/share/jitsi-meet
         environment:
             - ENABLE_AUTH
